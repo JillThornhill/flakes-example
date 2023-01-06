@@ -24,10 +24,8 @@
           };
           services.openssh.enable = true;
 
-          users.users.root.openssh.authorizedKeys.keys = [
-            # change this to your ssh key
-            "CHANGE"
-          ];
+          users.users.root.openssh.authorizedKeys.keys = [ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDFwvjIb51SQ5ISetVMQWkGwNXmJeZzeOMGZaugfwGgY jill@ubuntu-virtual-machine
+];
         })
       ];
     };
